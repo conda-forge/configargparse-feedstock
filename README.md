@@ -14,9 +14,7 @@ Summary: replacement for argparse allowing options to be set via config files an
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/configargparse-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/configargparse-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/configargparse-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/configargparse-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/configargparse-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/configargparse-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/configargparse-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/configargparse-feedstock)
 
 Current release info
 ====================
