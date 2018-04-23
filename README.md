@@ -14,12 +14,15 @@ Summary: replacement for argparse allowing options to be set via config files an
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/configargparse-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/configargparse-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/configargparse-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/configargparse-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/configargparse/badges/version.svg)](https://anaconda.org/conda-forge/configargparse)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/configargparse/badges/downloads.svg)](https://anaconda.org/conda-forge/configargparse)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-configargparse-green.svg)](https://anaconda.org/conda-forge/configargparse) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/configargparse.svg)](https://anaconda.org/conda-forge/configargparse) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/configargparse.svg)](https://anaconda.org/conda-forge/configargparse) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/configargparse.svg)](https://anaconda.org/conda-forge/configargparse) |
 
 Installing configargparse
 =========================
