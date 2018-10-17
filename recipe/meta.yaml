@@ -1,20 +1,17 @@
-{% set name = "ConfigArgParse" %}
 {% set version = "0.13.0" %}
-{% set sha256 = "e6441aa58e23d3d122055808e5e2220fd742dff6e1e51082d2a4e4ed145dd788" %}
 
 package:
-  name: {{ name|lower }}
+  name: configargparse
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/C/ConfigArgParse/ConfigArgParse-{{ version }}.tar.gz
+  sha256: e6441aa58e23d3d122055808e5e2220fd742dff6e1e51082d2a4e4ed145dd788
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
   host:
