@@ -26,6 +26,7 @@ test:
     - setup.py
   requires:
     - pyyaml
+    - pip
   imports:
     - configargparse
   commands:
