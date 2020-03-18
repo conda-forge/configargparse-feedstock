@@ -31,6 +31,7 @@ test:
     - configargparse
   commands:
     - python setup.py test
+    - python -m pip check
 
 about:
   home: https://github.com/zorro3/ConfigArgParse
