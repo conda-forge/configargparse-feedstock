@@ -1,7 +1,7 @@
 About configargparse
 ====================
 
-Home: https://github.com/zorro3/ConfigArgParse
+Home: https://github.com/bw2/ConfigArgParse
 
 Package license: MIT
 
