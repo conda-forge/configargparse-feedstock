@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=2.7
     - pip
   run:
-    - python
+    - python >=2.7
 
 test:
   source_files:
@@ -30,8 +30,8 @@ test:
   imports:
     - configargparse
   commands:
+    - pip check
     - python setup.py test
-    - python -m pip check
 
 about:
   home: https://github.com/bw2/ConfigArgParse
