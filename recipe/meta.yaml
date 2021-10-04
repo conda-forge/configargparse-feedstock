@@ -1,4 +1,4 @@
-{% set version = "1.5.2" %}
+{% set version = "1.5.3" %}
 
 package:
   name: configargparse
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/C/ConfigArgParse/ConfigArgParse-{{ version }}.tar.gz
-  sha256: c39540eb4843883d526beeed912dc80c92481b0c13c9787c91e614a624de3666
+  sha256: 1b0b3cbf664ab59dada57123c81eff3d9737e0d11d8cf79e3d6eb10823f1739f
 
 build:
   number: 0
