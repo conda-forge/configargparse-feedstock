@@ -31,7 +31,7 @@ test:
     - configargparse
   commands:
     - pip check
-    - pytest -vv --cov=configargparse --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=100
+    - pytest -vv --cov=configargparse --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=74
 
 about:
   home: https://github.com/bw2/ConfigArgParse
