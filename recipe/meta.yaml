@@ -11,27 +11,27 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
+  script: {{ PYTHON }} -m pip install  -vv --no-deps --no-build-isolation .
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.5
     - pip
   run:
-    - python >=2.7
+    - python >=3.5
 
 test:
   source_files:
     - tests
-    - setup.py
   requires:
-    - pyyaml
     - pip
+    - pytest-cov
+    - pyyaml
   imports:
     - configargparse
   commands:
     - pip check
-    - python setup.py test
+    - pytest -vv --cov=configargparse --cov-branch --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=100
 
 about:
   home: https://github.com/bw2/ConfigArgParse
