@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/C/ConfigArgParse/ConfigArgParse-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/C/ConfigArgParse/ConfigArgParse-{{ version }}.tar.gz
   sha256: e7067471884de5478c58a511e529f0f9bd1c66bfef1dea90935438d6c23306d1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install  -vv --no-deps --no-build-isolation .
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.5
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -27,6 +27,7 @@ test:
     - pip
     - pytest-cov
     - pyyaml
+    - python {{ python_min }}
   imports:
     - configargparse
   commands:
