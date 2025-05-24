@@ -1,15 +1,15 @@
-{% set version = "1.7" %}
+{% set version = "1.7.1" %}
 
 package:
   name: configargparse
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/c/configargparse/ConfigArgParse-{{ version }}.tar.gz
-  sha256: e7067471884de5478c58a511e529f0f9bd1c66bfef1dea90935438d6c23306d1
+  url: https://pypi.org/packages/source/c/configargparse/configargparse-{{ version }}.tar.gz
+  sha256: 79c2ddae836a1e5914b71d58e4b9adbd9f7779d4e6351a637b7d2d9b6c46d3d9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
