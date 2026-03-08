@@ -2,7 +2,8 @@
 schema_version: 1
 
 context:
-  version: 1.7.1
+  version: "1.7.3"
+  python_check_max: "3.14"
 
 package:
   name: configargparse
@@ -10,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/configargparse/configargparse-${{ version }}.tar.gz
-  sha256: 79c2ddae836a1e5914b71d58e4b9adbd9f7779d4e6351a637b7d2d9b6c46d3d9
+  sha256: 76dd1a51145fb7ca82621ee08cd38ec0c6316fe27a38b9137b75667d1116399e
 
 build:
   number: 0
@@ -25,6 +26,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
+    - toml
 
 tests:
   - python:
@@ -32,7 +34,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.13.*
+        - ${{ python_check_max }}.*
   - files:
       source:
         - tests/
@@ -43,15 +45,14 @@ tests:
         - python ${{ python_min }}.*
     script:
       - coverage run --source configargparse --branch -m pytest -vv --tb=long --color=yes
-      - coverage report --show-missing --skip-covered --fail-under 74
+      - coverage report --show-missing --skip-covered --fail-under=85
 
 about:
   license: MIT
   summary: A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
   license_file: LICENSE
-  homepage: https://github.com/bw2/ConfigArgParse
+  homepage: https://pypi.org/project/configargparse
   repository: https://github.com/bw2/ConfigArgParse
-  documentation: https://github.com/bw2/ConfigArgParse
 
 extra:
   recipe-maintainers:
