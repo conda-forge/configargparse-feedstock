@@ -45,15 +45,14 @@ tests:
         - python ${{ python_min }}.*
     script:
       - coverage run --source configargparse --branch -m pytest -vv --tb=long --color=yes
-      - coverage report --show-missing --skip-covered --fail-under=74
+      - coverage report --show-missing --skip-covered --fail-under=85
 
 about:
   license: MIT
   summary: A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
   license_file: LICENSE
-  homepage: https://github.com/bw2/ConfigArgParse
+  homepage: https://pypi.org/project/configargparse
   repository: https://github.com/bw2/ConfigArgParse
-  documentation: https://github.com/bw2/ConfigArgParse
 
 extra:
   recipe-maintainers:
