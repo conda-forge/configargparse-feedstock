@@ -3,15 +3,13 @@ About configargparse-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/configargparse-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/bw2/ConfigArgParse
+Home: https://pypi.org/project/configargparse
 
 Package license: MIT
 
 Summary: A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
 
 Development: https://github.com/bw2/ConfigArgParse
-
-Documentation: https://github.com/bw2/ConfigArgParse
 
 Current build status
 ====================
