@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.7.3"
+  version: "1.7.5"
   python_check_max: "3.14"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/configargparse/configargparse-${{ version }}.tar.gz
-  sha256: 76dd1a51145fb7ca82621ee08cd38ec0c6316fe27a38b9137b75667d1116399e
+  sha256: e3f9a7bb6be34d66b2e3c4a2f58e3045f8dfae47b0dc039f87bcfaa0f193fb0f
 
 build:
   number: 0
