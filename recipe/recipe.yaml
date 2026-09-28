@@ -35,7 +35,7 @@ tests:
       files:
         - etc/conda/test-files/configargparse/**
       site_packages:
-        - configargparse/**
+        - configargparse.py
         - configargparse-${{ version }}.dist-info/**
   - python:
       imports: configargparse
