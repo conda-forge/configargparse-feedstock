@@ -34,8 +34,8 @@ tests:
       strict: true
       files:
         - etc/conda/test-files/configargparse/**
+        - site-packages/configargparse.py
       site_packages:
-        - configargparse.py
         - configargparse-${{ version }}.dist-info/**
   - python:
       imports: configargparse
