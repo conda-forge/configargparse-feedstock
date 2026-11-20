@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.10.1"
+  version: "1.10.2"
   python_check_max: "3.15"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/configargparse/configargparse-${{ version }}.tar.gz
-  sha256: 8ee7c4429e6402b881c9a85569eb9484db2f63260718b45c67c59625284371c8
+  sha256: 2deb0b3d6d46ff6e3218fcd350127507c5e3c11e21c8072a9fb24531dfc9bd4a
 
 build:
   number: 0
